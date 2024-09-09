@@ -9,4 +9,4 @@ An in memory highly efficient logger over zap for applications that need extreme
 - The logger is designed to be used in high throughput applications where logging to file directly is not an option.
 
 ## Caution
-To avoid log loss which is possible today with extremely high throughput, the current logger implementation needs to be enhanced by add buffering in between buffer switches .
+To avoid log loss which is possible today with extremely high throughput, the current logger implementation needs to be enhanced to buffer logs(for example using a buffered channel) in between buffer swaps.
